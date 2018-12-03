@@ -41,7 +41,7 @@ get_data(dir_data_from, dir_data_to, 'albert',focus_task  )
 data_dir = 'C:\noga\Albert behavior\Data\ProbablisticChoice\';
 files = dir (data_dir); files = files (3:end);
 
-for ii=1:length(files)
+for ii=43:length(files)
     data = importdata ([data_dir files(ii).name]);
     data = addPreviousTrial (data);
     save ([data_dir files(ii).name], 'data')
