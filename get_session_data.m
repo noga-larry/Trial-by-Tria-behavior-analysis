@@ -6,13 +6,14 @@ dir_to = ['C:\noga\Albert behavior' '\' 'session_info'];
 get_excel_info( excel_file_adress, dir_to )
 
 %% Get and organize data - single
+load (['C:\noga\Albert behavior' '\' 'session_info']);
 
 focus_task = '4DirectionsProbablisticRewardEccentricQue';
 % folder where the raw trials are stored 
 dir_data_from = 'C:\noga\Albert behavior\Maestro Data';
 % folder in which to store organized data
 dir_data_to = 'C:\noga\Albert behavior\Data';
-get_data(dir_data_from, dir_data_to, 'albert',focus_task  )
+get_data(task_info,dir_data_from, dir_data_to, 'albert',focus_task  )
 
 
 %% find previous trial outcome (same type)
